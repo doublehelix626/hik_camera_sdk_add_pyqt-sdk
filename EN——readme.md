@@ -201,4 +201,59 @@ The project entry file is:
 python main.py
 ```
 
+After startup, the program will:
 
+1. initialize the PyQt application
+2. create the device object
+3. load the main interface
+4. automatically bind interface events
+5. create the log directory
+6. display the main window
+
+---
+
+## Implemented Control Logic
+
+At present, the following basic control logic has been implemented and bound in the project:
+
+- video stream display
+- screenshot display
+- zoom in
+- zoom out
+- PTZ upward movement
+- PTZ downward movement
+- PTZ leftward movement
+- PTZ rightward movement
+
+The control method mainly adopts the pattern of **pressing a button to start an action and releasing the button to stop it**, which is suitable for real-time PTZ interaction.
+
+---
+
+## Applicable Scenarios
+
+This project is suitable for reference or secondary development in the following scenarios:
+
+- desktop control program for Hikvision PTZ cameras
+- PyQt host-side development examples
+- camera control experimental platforms
+- verification of video stream display and screenshot functions
+- SDK secondary encapsulation practice
+- robot vision / PTZ control related engineering projects
+
+---
+
+## Possible Extensions
+
+You can continue to extend this project with:
+
+- preset position control
+- focal length / zoom ratio status display
+- real-time PTZ position reading
+- automatic cruise
+- multi-camera management
+- device parameter configuration pages
+- improved logging system
+- unified error code encapsulation
+- configuration-based management instead of hard-coded parameters
+
+---
